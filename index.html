@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Love | Wedding Photography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">WED VUE</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle">🌙</button>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Capturing Love, One Moment at a Time</h1>
+        <p>Every smile, every tear, every kiss—forever framed.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Wedding Gallery</h2>
+        <div class="gallery-container">
+            <img src="/images/couple2.jpg" alt="Couple" onclick="openLightbox(this)">
+            <img src="/images/ringexchange3.jpg" alt="Ring Exchange" onclick="openLightbox(this)">
+            <img src="/images/traditional2.jpg" alt="Traditional" onclick="openLightbox(this)">
+            <img src="/images/destionation1.jpg" alt="Destination" onclick="openLightbox(this)">
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightboxImg" src="" alt="Enlarged">
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I believe in capturing raw emotions and timeless moments. Weddings are not just events, but stories of love and new beginnings.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>📍 Kerala, India</p>
+        <p>📞 +9109946811</p>
+        <p>📧 wedvue@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Eternal WED VUE Weddings. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
